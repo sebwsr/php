@@ -3,7 +3,9 @@
 }
 
 .welcome {
-    background: url('/background.jpg');
+    background: url('../img/background.jpg');
     background-position: center center;
     background-size: cover;
+    min-height: calc(100vh - 56px);
+    width: 100%;
 }

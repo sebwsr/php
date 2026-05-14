@@ -47,8 +47,8 @@ $addresses = $stmt->fetchAll();
                                         <td><?= $address["contact_name"] ?></td>
                                         <td><?= nl2br($address["address"]) ?></td>
                                         <td>
-                                            <a href="edit_address.php?id=<?= $address["id"] ?>" class="btn btn-sm btn-warning">Edit</a>
-                                            <a href="delete_address.php?id=<?= $address["id"] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Delete this address?')">Delete</a>
+                                            <a href="editAddress.php?id=<?= $address["id"] ?>" class="btn btn-sm btn-warning">Edit</a>
+                                            <a href="deleteAddress.php?id=<?= $address["id"] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Delete this address?')">Delete</a>
                                         </td>
                                     </tr>
                                     <?php endforeach; ?>

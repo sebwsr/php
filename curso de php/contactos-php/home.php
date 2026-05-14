@@ -16,7 +16,7 @@ $contacts = $conn->query("SELECT * FROM contacts WHERE user_id = {$_SESSION['use
 <div class="container pt-4 p-3">
     <div class="row">
         <!-- Enlace para ver todas las direcciones -->
-        <div class="col-12 mb-3">
+        <div class="col-md-4 mb-3">
             <a href="addresses.php" class="btn btn-info">View All Addresses</a>
         </div>
         
@@ -54,7 +54,7 @@ $contacts = $conn->query("SELECT * FROM contacts WHERE user_id = {$_SESSION['use
                         <?php endif; ?>
                         
                         <div class="mt-2">
-                            <a href="add_address.php?contact_id=<?= $contact["id"] ?>" class="btn btn-sm btn-success mb-2">Add Address</a>
+                            <a href="addAddress.php?contact_id=<?= $contact["id"] ?>" class="btn btn-sm btn-success mb-2">Add Address</a>
                             <a href="edit.php?id=<?= $contact["id"] ?>" class="btn btn-secondary mb-2">Edit Contact</a>
                             <a href="delete.php?id=<?= $contact["id"] ?>" class="btn btn-danger mb-2">Delete Contact</a>
                         </div>

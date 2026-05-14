@@ -31,8 +31,8 @@ CREATE TABLE addresses (
 );
 
 -- Datos de prueba
-INSERT INTO users (name, email, password) VALUES 
-('John Doe', 'john@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+UPDATE INTO users (name, email, password) VALUES 
+('John Doe', 'john@example.com', 'password123');
 
 INSERT INTO contacts (user_id, name, phone_number) VALUES 
 (1, 'Jane Smith', '1234567890'),

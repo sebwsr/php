@@ -6,13 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap -->
-  <link 
-      <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.8/darkly/bootstrap.min.css" 
-      integrity="sha512-+uC0Ar9AG4/j/iF0Ug22TO9D17MAbD94K7J8h17EzXzN3D5kcOpYQdF4OuiLraHSibCVhz4DIcqwsDboRMVStg=="
-      crossorigin="anonymous" 
-      referrerpolicy="no-referrer" />
-  />
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" 
+      crossorigin="anonymous" />
   <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
@@ -23,7 +19,7 @@
   <!-- Static Content -->
   <link rel="stylesheet" href="./static/css/index.css" />
   <?php $uri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH) ?>
-  <?php if ($uri == "/contacts-app/" || $uri == "/contacts-app/index.php"): ?>
+  <?php if ($uri == "/contactos-app/" || $uri == "/contactos-app/index.php"): ?>
     <script defer src="./static/js/welcome.js"></script>
   <?php endif ?>
 
